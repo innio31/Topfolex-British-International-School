@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Topfolex British International School | Building World Class Quality Education Standard</title>
+    <meta name="description" content="Topfolex British International School - Building world-class quality education standard from Creche to Senior Secondary in Ogun State. BECE excellence, modern ICT, and character development.">
+    <meta name="keywords" content="Topfolex British School, Ajegunle Ogun State, British curriculum school, BECE excellence, Coding classes, Football academy, Kajola Road">
+    <meta name="author" content="Topfolex British International School">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏫</text></svg>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.topfolex.acad.com.ng/">
+    <meta property="og:title" content="Topfolex British International School">
+    <meta property="og:description" content="Building world-class quality education standard with modern tech, moral excellence, and outstanding BECE results.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80">
+    <meta property="og:locale" content="en_NG">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Topfolex British International School">
+    <meta name="twitter:description" content="Excellence in academics, technology, and character. Enroll today!">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.topfolex.acad.com.ng/">
+
+    <!-- Google Fonts + Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Structured Data / Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Topfolex British International School",
+        "alternateName": "Topfolex Schools",
+        "description": "Building world-class quality education standard from Creche to Senior Secondary. Modern facilities, British-influenced curriculum, and character development.",
+        "url": "https://www.topfolex.acad.com.ng/",
+        "logo": "https://www.topfolex.acad.com.ng/images/logo.png",
+        "foundingDate": "2024",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Kajola Road, Custom Base, Ajegunle",
+            "addressLocality": "Ogun State",
+            "addressCountry": "NG"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+2348033627316",
+            "contactType": "admissions",
+            "availableLanguage": ["English"]
+        },
+        "telephone": "+2348033627316",
+        "email": "topfolexgloballtd@gmail.com"
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #6A5ACD;    /* Slate blue / purple */
+            --primary-dark: #4A3A9E;
+            --primary-light: #8B7DD6;
+            --secondary: #fae20c;  /* bright gold/yellow */
+            --secondary-dark: #d4bc00;
+            --accent: #FFFFFF;
+            --dark: #1E1B3A;
+            --gray-dark: #2D2A4A;
+            --gray: #6B6A80;
+            --light-bg: #F8F9FF;
+            --card-white: #FFFFFF;
+            --border-radius: 28px;
+            --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05);
+            --shadow-md: 0 20px 30px -12px rgba(0,0,0,0.1);
+            --transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .logo-name, .hero-title, .section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* TOPBAR */
+        .topbar {
+            background: var(--primary-dark);
+            color: rgba(255,255,255,0.9);
+            font-size: 0.85rem;
+            padding: 10px 0;
+            border-bottom: 2px solid var(--secondary);
+        }
+        .topbar-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+        .topbar-left, .topbar-right {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .topbar a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .topbar a:hover { color: var(--secondary); }
+        .topbar i { margin-right: 8px; color: var(--secondary); }
+
+        /* HEADER */
+        .header {
+            background: var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+            transition: var(--transition);
+        }
+        .header.scrolled {
+            box-shadow: var(--shadow-sm);
+            background: rgba(255,255,255,0.98);
+        }
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 32px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        .logo-icon {
+            background: var(--primary);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: white;
+            box-shadow: 0 4px 12px rgba(106,90,205,0.3);
+        }
+        .logo-text .logo-name {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: -0.3px;
+            line-height: 1.2;
+        }
+        .logo-motto {
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            color: var(--secondary-dark);
+            font-weight: 700;
+        }
+        .nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        .nav-link {
+            text-decoration: none;
+            font-weight: 600;
+            color: var(--dark);
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+        .nav-link:hover, .nav-link.active { color: var(--primary); }
+        .nav-apply {
+            background: var(--secondary);
+            padding: 10px 22px;
+            border-radius: 40px;
+            color: var(--primary-dark);
+            font-weight: 800;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        .nav-apply:hover {
+            background: var(--secondary-dark);
+            color: white;
+            transform: translateY(-2px);
+        }
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background: var(--primary);
+            transition: 0.2s;
+        }
+
+        /* HERO */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(120deg, rgba(30,27,58,0.92) 0%, rgba(106,90,205,0.85) 100%), url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            padding: 60px 32px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(250,226,12,0.2);
+            backdrop-filter: blur(4px);
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 24px;
+        }
+        .hero-title {
+            font-size: 4rem;
+            line-height: 1.2;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .hero-title span {
+            color: var(--secondary);
+            border-bottom: 3px solid var(--secondary);
+        }
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: rgba(255,255,240,0.9);
+            margin-bottom: 32px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: var(--transition);
+            font-size: 0.9rem;
+        }
+        .btn-primary {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 6px 14px rgba(106,90,205,0.4);
+        }
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        .btn-outline-light {
+            border: 2px solid rgba(255,255,255,0.7);
+            color: white;
+            background: transparent;
+        }
+        .btn-outline-light:hover {
+            background: var(--secondary);
+            border-color: var(--secondary);
+            color: var(--primary-dark);
+        }
+        .hero-cta {
+            display: flex;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        /* STATS STRIP */
+        .stats-strip {
+            background: var(--accent);
+            padding: 45px 0;
+            box-shadow: var(--shadow-sm);
+            border-bottom: 1px solid rgba(106,90,205,0.15);
+        }
+        .stats-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 28px;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: 2.6rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            display: block;
+        }
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--gray);
+            font-weight: 500;
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 80px 0;
+        }
+        .section-alt {
+            background: var(--accent);
+        }
+        .section-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--primary);
+            font-weight: 700;
+            display: block;
+            margin-bottom: 12px;
+        }
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 20px;
+        }
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 700px;
+            margin-bottom: 48px;
+        }
+
+        /* Feature Grid */
+        .features-grid, .programs-grid, .extra-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+        }
+        .feature-card, .program-card, .extra-card {
+            background: var(--card-white);
+            padding: 32px 24px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(106,90,205,0.1);
+        }
+        .feature-card:hover, .program-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-light);
+        }
+        .feature-icon {
+            background: rgba(106,90,205,0.1);
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: var(--primary);
+            margin-bottom: 24px;
+        }
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--primary-dark);
+        }
+        .feature-text {
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* Leadership cards */
+        .leaders-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            margin-top: 20px;
+        }
+        .leader-card {
+            background: white;
+            border-radius: 28px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .leader-img {
+            height: 260px;
+            background: linear-gradient(145deg, #e9e6ff, #f2f0ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 70px;
+            color: var(--primary);
+        }
+        .leader-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .leader-info {
+            padding: 24px;
+        }
+        .leader-name {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+        }
+        .leader-title {
+            color: var(--secondary-dark);
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        .leader-bio {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        /* Timeline/Milestones */
+        .milestone-list {
+            list-style: none;
+        }
+        .milestone-list li {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+        .milestone-list i {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-top: 4px;
+        }
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .two-col-img img {
+            width: 100%;
+            border-radius: 32px;
+            object-fit: cover;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* CTA */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 60px 32px;
+            text-align: center;
+            border-radius: 40px;
+            margin: 40px auto;
+        }
+        .cta-banner h2 {
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark);
+            color: rgba(255,255,255,0.7);
+            padding: 60px 0 30px;
+            margin-top: 40px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+        }
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        .footer-logo-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+        }
+        .footer-motto {
+            color: var(--secondary);
+        }
+        .footer-social {
+            display: flex;
+            gap: 16px;
+            margin-top: 20px;
+        }
+        .footer-social-link {
+            background: rgba(255,255,255,0.1);
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition);
+        }
+        .footer-social-link:hover {
+            background: var(--secondary);
+            color: var(--primary-dark);
+        }
+        .footer-heading {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .footer-links {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        .footer-links a:hover {
+            color: var(--secondary);
+        }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 40px;
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 900px) {
+            .nav { display: none; flex-direction: column; background: white; position: absolute; top: 80px; left: 0; width: 100%; padding: 24px; gap: 20px; box-shadow: 0 20px 30px rgba(0,0,0,0.1); z-index: 999;}
+            .nav.open { display: flex; }
+            .hamburger { display: flex; }
+            .hero-title { font-size: 2.6rem; }
+            .two-col { grid-template-columns: 1fr; }
+            .section-title { font-size: 2rem; }
+            .container { padding: 0 24px; }
+        }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.7s ease; }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .contact-input, .contact-select {
+            width: 100%;
+            padding: 14px 18px;
+            border-radius: 60px;
+            border: 1px solid #e2e2ea;
+            margin-bottom: 18px;
+            font-family: inherit;
+        }
+        button { cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <!-- Topbar -->
+    <div class="topbar">
+        <div class="container">
+            <div class="topbar-inner">
+                <div class="topbar-left">
+                    <span><i class="fas fa-phone-alt"></i><a href="tel:+2348033627316">+234 803 362 7316</a></span>
+                    <span><i class="fas fa-envelope"></i><a href="mailto:topfolexgloballtd@gmail.com">topfolexgloballtd@gmail.com</a></span>
+                </div>
+                <div class="topbar-right">
+                    <span><i class="fas fa-map-marker-alt"></i> Kajola Road, Custom Base, Ajegunle, Ogun State</span>
+                    <span><i class="fas fa-calendar-alt"></i> Admissions Open 2026/2027</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-wrapper">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+    <img src="images/logo.png" alt="Topfolex" style="width: 48px; height: 48px; object-fit: contain; border-radius: 50%;">
+</div>
+                <div class="logo-text">
+                    <div class="logo-name">Topfolex British</div>
+                    <div class="logo-motto">International School</div>
+                </div>
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            <nav class="nav" id="nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="admissions.html" class="nav-link">Admissions</a>
+                <a href="https://acad.com.ng/tbis/login.php" class="nav-link nav-apply"> Portal</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-chalkboard-user"></i> Since 2024 • British Standard Education</div>
+                <h1 class="hero-title">Building World-Class <span>Quality</span> Education Standard</h1>
+                <p class="hero-subtitle">Topfolex British International School – where academic excellence meets cutting-edge ICT, character formation, and outstanding BECE results.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary"><i class="fas fa-user-graduate"></i> Enroll Your Child</a>
+                    <a href="#about" class="btn btn-outline-light">Explore Our Vision</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats-strip">
+        <div class="container">
+            <div class="stats-inner">
+                <div class="stat-item"><span class="stat-number">2024</span><span class="stat-label">Year Founded</span></div>
+                <div class="stat-item"><span class="stat-number">300%</span><span class="stat-label">Growth (First Year)</span></div>
+                <div class="stat-item"><span class="stat-number">A*</span><span class="stat-label">BECE Excellence</span></div>
+                <div class="stat-item"><span class="stat-number">24/7</span><span class="stat-label">Solar Power & Tech</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <section class="section" id="about">
+        <div class="container">
+            <span class="section-label">Why Topfolex British</span>
+            <h2 class="section-title">Shaping Global Champions<br>With Discipline & Innovation</h2>
+            <div class="features-grid reveal">
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-microchip"></i></div><h3 class="feature-title">Modern Tech Integration</h3><p class="feature-text">Computers, projectors, e-learning devices, coding & robotics classes — future-ready skills from an early age.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-sun"></i></div><h3 class="feature-title">24/7 Solar Power Supply</h3><p class="feature-text">Uninterrupted learning environment with full alternative power, ensuring ICT labs and classrooms always active.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-chart-simple"></i></div><h3 class="feature-title">Outstanding BECE Performance</h3><p class="feature-text">Inaugural BECE candidates recorded multiple A distinctions; academic rigor produces top results.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-futbol"></i></div><h3 class="feature-title">Football Academy & Sports</h3><p class="feature-text">Professional football training, inter-house sports, and athletic development for holistic growth.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-globe"></i></div><h3 class="feature-title">British-influenced Curriculum</h3><p class="feature-text">Blended Nigerian & British standards, enhanced with critical thinking, debate, and STEM clubs.</p></div>
+                <div class="feature-card"><div class="feature-icon"><i class="fas fa-hand-sparkles"></i></div><h3 class="feature-title">Safe & Conducive Environment</h3><p class="feature-text">Peaceful, secure, and well-equipped campus that fosters academic excellence and moral uprightness.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs (Creche to SS) -->
+    <section class="section section-alt" id="programs">
+        <div class="container">
+            <span class="section-label">Our Academic Pathway</span>
+            <h2 class="section-title">From Crèche to Senior Secondary<br>Seamless British-Nigerian Excellence</h2>
+            <div class="programs-grid reveal">
+                <div class="program-card"><h3 style="color:var(--primary); font-size:1.8rem;">👶 Crèche / Nursery</h3><p class="feature-text">Ages 0-5: early years foundation, play-based learning, phonics, and social skills.</p></div>
+                <div class="program-card"><h3 style="color:var(--primary); font-size:1.8rem;">📘 Primary School</h3><p class="feature-text">Grades 1-6: strong numeracy, literacy, science, and moral instruction with tech integration.</p></div>
+                <div class="program-card"><h3 style="color:var(--primary); font-size:1.8rem;">🏛️ Junior Secondary</h3><p class="feature-text">JSS1-3: broad curriculum, pre-vocational studies, ICT, and BECE preparation excellence.</p></div>
+                <div class="program-card"><h3 style="color:var(--primary); font-size:1.8rem;">🎓 Senior Secondary</h3><p class="feature-text">SS1-3: WAEC/NECO focus, leadership training, career guidance, and advanced sciences.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones & Achievements -->
+    <section class="section">
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <span class="section-label">Our Journey</span>
+                    <h2 class="section-title">Milestones & Recognition</h2>
+                    <ul class="milestone-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Official Approval & Recognition</strong> – Operational license granted, launching a vision for world-class education.</li>
+                        <li><i class="fas fa-chart-line"></i> <strong>Remarkable Growth (2024–2025)</strong> – Enrollment surged beyond expectations within first year.</li>
+                        <li><i class="fas fa-party-horn"></i> <strong>First School Party – Aug 2, 2025</strong> – A landmark celebration enjoyed by students & parents.</li>
+                        <li><i class="fas fa-star"></i> <strong>BECE Top Performance</strong> – First cohort achieved outstanding results with multiple A grades.</li>
+                        <li><i class="fas fa-laptop-code"></i> <strong>Modern Facilities Launch</strong> – Computers, e-learning devices, projectors, and 24/7 solar power setup.</li>
+                    </ul>
+                </div>
+                <div class="two-col-img">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=80" alt="School modern classroom concept">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extracurricular & Clubs -->
+    <section class="section section-alt">
+        <div class="container">
+            <span class="section-label">Beyond Academics</span>
+            <h2 class="section-title">Discover Passion, Build Leaders</h2>
+            <div class="extra-grid reveal">
+                <div class="extra-card"><div class="feature-icon"><i class="fas fa-microphone-alt"></i></div><h3 class="feature-title">Debate & Public Speaking</h3><p class="feature-text">Eloquent communication and critical thinking through regular debate competitions.</p></div>
+                <div class="extra-card"><div class="feature-icon"><i class="fas fa-newspaper"></i></div><h3 class="feature-title">Press & Jet Club</h3><p class="feature-text">Journalism, science competitions, and Jet club activities that spark innovation.</p></div>
+                <div class="extra-card"><div class="feature-icon"><i class="fas fa-code"></i></div><h3 class="feature-title">Coding & Robotics</h3><p class="feature-text">Hands-on programming, robotics, and future-tech skills for the digital age.</p></div>
+                <div class="extra-card"><div class="feature-icon"><i class="fas fa-futbol"></i></div><h3 class="feature-title">Football Academy</h3><p class="feature-text">Professional coaching, inter-house sports, and football tournaments yearly.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership (Placeholder bios with refined content) -->
+    <section class="section">
+        <div class="container">
+            <span class="section-label">Leadership</span>
+            <h2 class="section-title">Dedicated Educators,<br>Global Vision</h2>
+            <div class="leaders-grid reveal">
+                <div class="leader-card"><div class="leader-img"><i class="fas fa-chalkboard-user"></i></div><div class="leader-info"><h3 class="leader-name">Mrs. Adeola Williams</h3><div class="leader-title">Principal / Head of School</div><p class="leader-bio">Educational strategist with 15+ years experience. Drives academic excellence and digital transformation across all levels.</p></div></div>
+                <div class="leader-card"><div class="leader-img"><i class="fas fa-user-tie"></i></div><div class="leader-info"><h3 class="leader-name">Mr. Samuel O. Bamidele</h3><div class="leader-title">Vice Principal (Academics)</div><p class="leader-bio">Curriculum expert and BECE specialist, ensures outstanding learning outcomes and teacher development.</p></div></div>
+                <div class="leader-card"><div class="leader-img"><i class="fas fa-laptop-code"></i></div><div class="leader-info"><h3 class="leader-name">Engr. Michael Afolabi</h3><div class="leader-title">Director of ICT & Innovation</div><p class="leader-bio">Pioneer of coding clubs, robotics labs, and e-learning infrastructure; committed to tech-driven education.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry & Contact -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title">Start Your Child's Journey Today</h2>
+            <div class="two-col reveal">
+                <div>
+                    <p style="margin-bottom: 24px;"><strong>📍 Kajola Road, Custom Base, Ajegunle, Ogun State.</strong></p>
+                    <div style="margin-bottom: 18px;"><i class="fas fa-phone-alt" style="color: var(--primary); width: 30px;"></i> <a href="tel:+2348033627316" style="color:var(--dark);">+234 803 362 7316</a></div>
+                    <div style="margin-bottom: 18px;"><i class="fas fa-envelope" style="color: var(--primary);"></i> <a href="mailto:topfolexgloballtd@gmail.com">topfolexgloballtd@gmail.com</a></div>
+                    <div><i class="fas fa-clock"></i> Mon-Fri: 8am – 3:30pm</div>
+                    <div class="footer-social" style="margin-top: 30px;">
+                        <a href="#" class="footer-social-link" style="background: var(--primary-light);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" style="background: var(--primary-light);"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" style="background: var(--primary-light);"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div style="background: white; border-radius: 32px; padding: 32px; box-shadow: var(--shadow-sm);">
+                    <h3 style="font-size: 1.6rem; margin-bottom: 20px; color: var(--primary-dark);">Request Information</h3>
+                    <input type="text" class="contact-input" placeholder="Parent's Full Name" id="parentName">
+                    <input type="tel" class="contact-input" placeholder="Phone Number" id="parentPhone">
+                    <select class="contact-select" id="classLevel">
+                        <option>Select Class Level</option><option>Crèche/Nursery</option><option>Primary</option><option>Junior Secondary</option><option>Senior Secondary</option>
+                    </select>
+                    <button class="btn btn-primary" style="width:100%; justify-content:center;" onclick="alert('Thank you! Topfolex British School will contact you shortly. Welcome to excellence!')"><i class="fas fa-paper-plane"></i> Send Enquiry</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="container">
+        <div class="cta-banner">
+            <h2>Enroll for 2026/2027 Session</h2>
+            <p>Limited slots for Creche to SS3 — world-class British standard with cutting-edge tech & moral excellence.</p>
+            <a href="#contact" class="btn btn-primary" style="background: var(--secondary); color: var(--primary-dark);">Admission Open <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div><div class="footer-logo"><div class="logo-icon">
+    <img src="images/logo.png" alt="Topfolex" style="width: 48px; height: 48px; object-fit: contain; border-radius: 50%;">
+</div><div><div class="footer-logo-name">Topfolex British</div><div class="footer-motto">International School</div></div></div><p>Building world-class quality education standard.</p><div class="footer-social"><a href="#" class="footer-social-link"><i class="fab fa-facebook-f"></i></a><a href="#" class="footer-social-link"><i class="fab fa-instagram"></i></a><a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a></div></div>
+                <div><h3 class="footer-heading">Quick Links</h3><ul class="footer-links"><li><a href="#">Home</a></li><li><a href="#about">Why Us</a></li><li><a href="#programs">Academics</a></li><li><a href="#contact">Admissions</a></li></ul></div>
+                <div><h3 class="footer-heading">Explore</h3><ul class="footer-links"><li>Football Academy</li><li>Coding & Robotics</li><li>Debate Club</li><li>BECE Excellence</li></ul></div>
+                <div><h3 class="footer-heading">Contact</h3><ul class="footer-links"><li><i class="fas fa-map-marker-alt"></i> Kajola Rd, Ajegunle</li><li><i class="fas fa-phone"></i> +234 803 362 7316</li><li><i class="fas fa-envelope"></i> topfolexgloballtd@gmail.com</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Topfolex British International School — Excellence, Innovation, Character.</p></div>
+        </div>
+    </footer>
+
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 30));
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('open'); nav.classList.toggle('open'); });
+        const revealObserver = new IntersectionObserver(entries => { entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+    </script>
+</body>
+</html>
